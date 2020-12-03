@@ -1,4 +1,15 @@
+@font-face {
+    font-family: montserrat;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    font-weight: bold;
+}
+
 h1 {
-    color: red;
+    font-family: montserrat;
+    color: black;
     text-align: center;
+    display: block;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.2);
 }
