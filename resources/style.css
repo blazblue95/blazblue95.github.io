@@ -8,6 +8,7 @@
 body {
     background-color: beige;
     font-weight: bold;
+    margin: 0px 20%;
 }
 
 h1 {
@@ -26,6 +27,7 @@ h1 {
 
 h2 {
     font-family: montserrat;
+    text-align: center;
 }
 
 h3 {
@@ -38,8 +40,19 @@ p {
 
 li {
     font-family: montserrat;
+    margin: 20px 0;
 }
 
-div {
-    margin: 40px 100px;
+section {
+    margin: 100px 0;
+}
+
+#content {
+    margin: 50px 10%;
+}
+
+hr {
+    margin: 20px 30%;
+    border: 2px solid grey;
+    border-radius: 2px;
 }
