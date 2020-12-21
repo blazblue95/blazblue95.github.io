@@ -77,3 +77,8 @@ hr {
     position: absolute;
     background-color: red;
 }
+
+.content {
+    margin: 50px 10%;
+    display: none;
+}
