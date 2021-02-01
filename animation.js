@@ -10,7 +10,6 @@ $(document).ready(function(){
             $("#intro").css("width", "-=20%");
             clickIntro = 0;
         }
-
     });
 
     $("#workHead").click(function(){
