@@ -51,9 +51,32 @@ li {
 }
 
 section {
-    margin: 100px 0;
+    margin: 100px auto;
+    padding: 20px 20px;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
 }
 
+#intro {
+    width: 30%;
+}
+
+#work {
+    width: 30%;
+}
+
+#education {
+    width: 30%;
+}
+
+#projects {
+    width: 30%;
+}
+
+#cca {
+    width: 30%;
+}
 #content {
     margin: 50px 10%;
 }
@@ -76,4 +99,9 @@ hr {
     height: 50px;
     position: absolute;
     background-color: red;
+}
+
+.content {
+    margin: 50px 10%;
+    display: none;
 }
