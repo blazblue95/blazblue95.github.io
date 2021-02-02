@@ -103,5 +103,5 @@ hr {
 
 .content {
     margin: 50px 10%;
-    display: none;
+    display: inline-block;
 }

@@ -1,30 +1,29 @@
-$(document).ready(function(){
-    let clickIntro = 0;
-    $("#intro").click(function(){
-        console.log($(this));
-        $("#introContent").slideToggle("slow");
-        if (clickIntro == 0) {
-            $(this).css("width", "+=20%");
-            clickIntro = 1;
+$(document).ready(function(event){
+
+    /* intro button toggle for sections*/
+
+    $(".content").hide();
+    $("section").click( function(){
+        var eleSelect = $(this);
+        if (!eleSelect.attr('clickToggle')) {
+            eleSelect.attr('clickToggle', 0);
+        };
+        var eleChildren = $(eleSelect).children();
+        console.log(eleChildren);
+        if (eleSelect.attr('clickToggle') == 0) {
+            eleSelect.animate({width: '70%'},"slow", function() {     // selects element with tag section
+                eleSelect.children(".content").slideToggle(500);      // slides down child of section with class content
+            });
+            eleSelect.attr('clickToggle', 1);
         } else {
-            $("#intro").css("width", "-=20%");
-            clickIntro = 0;
-        }
+            eleSelect.children(".content").slideToggle("slow", function() {
+                eleSelect.animate({width: '30%'});
+            });
+            eleSelect.attr('clickToggle', 0);
+        };
     });
 
-    $("#workHead").click(function(){
-        $("#workContent").slideToggle("slow");
-    });
+    /* */
 
-    $("#educationHead").click(function(){
-        $("#educationContent").slideToggle("slow");
-    });
-
-    $("#projectHead").click(function(){
-        $("#projectContent").slideToggle("slow");
-    });
-
-    $("#ccaHead").click(function(){
-        $("#ccaContent").slideToggle("slow");
-    });
+    
 });
