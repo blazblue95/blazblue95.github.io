@@ -15,18 +15,9 @@ h1 {
     font-family: montserrat;
     color: black;
     display: block;
-    /* 
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.2);
-    height: 50px;
-    width: 50%;
-    */
-    /*
-    padding: 10px 0 0 5px;
-    */
     font-size: 50px;
     font-style: italic;
+    display: inline-block;
 }
 
 h2 {
@@ -104,8 +95,18 @@ hr {
     display: inline-block;
 }
 
-.button {
-    background: url(./hamburger.png);
-    width: 100px;
-    height: 100px;
+button {
+    float: right;
+    margin-top: 33.5px; /* need to change to make more dynamic */
+    height: 42px;  
+    width: 62px;
+    border: none;
+}
+
+#hamburger {
+    background-image: url( './hamburger.png' );
+    background-size: 60px 40px;
+    background-repeat: no-repeat;
+    height: 42px;  
+    width: 62px;
 }
